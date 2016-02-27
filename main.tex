@@ -47,6 +47,8 @@
 
 \documentclass{article}
 
+% in the preamble go all packages *NOT* compatible with
+% Authorea but necessary to offline compiling
 \usepackage{graphicx}
 \usepackage[space]{grffile}
 \usepackage{latexsym}
@@ -63,10 +65,7 @@
 \newcommand\mathplus{+}
 
 \usepackage{multicol}
-\usepackage[normalem]{ulem} % for strikeout
-\usepackage{xcolor,colortbl} % for cell color
-\usepackage{flushend} % for ref columns equalization
-\usepackage{csquotes} % for quotes
+
 
 %% duplicates
 \usepackage{graphicx}
@@ -74,16 +73,16 @@
 \usepackage{multirow}
 
 \pagenumbering{gobble} % remove page no.
-\CopyrightYear{2016}
+%\CopyrightYear{2016}
 
 
 \input{header}
 
 \title{\input{title}}
 
+\input{authors}
+
 \begin{document}
-	
-\input{authors}}
 
 \maketitle
 
