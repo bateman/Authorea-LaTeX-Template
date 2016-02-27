@@ -146,3 +146,5 @@ pythontex-files-*/
 *.ttt
 *.fff
 
+# dirs
+.DS_Store
