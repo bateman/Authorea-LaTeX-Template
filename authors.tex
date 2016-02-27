@@ -1,23 +1,9 @@
-\def\sharedaffiliation{
-    \end{tabular}
-    \begin{tabular}{c}
-}   
-\numberofauthors{3}
-% Three authors sharing the same affiliation.
+\usepackage{authblk}
 
-    \author{
-      \alignauthor Fabio Calefato\\      
-      \email{fabio.calefato@uniba.it}
-%
-      \alignauthor Filippo Lanubile\\     
-      \email{filippo.lanubile@uniba.it}
-%
-      \alignauthor Nicole Novielli\\    
-      \email{nicole.novielli@uniba.it}
-%
-      \sharedaffiliation
-%      \affaddr{Department of Computer Science }  \\
-      \affaddr{University of Bari}   \\
-      \affaddr{Bari, Italy}\\
-          }
-%
+\author[1]{Fabio Calefato\thanks{fabio.calefato@uniba.it}}
+\author[1]{Filippo Lanubile\thanks{filippo.lanubile@uniba.it}}
+\author[2]{Nicole Novielli\thanks{nicole.novielli@uniba.it}}
+\affil[1]{Department of Computer Science, University of Bari, Italy}
+\affil[2]{Department of Computer Science, University of Bari, Italy}
+
+\renewcommand\Authands{ and }
